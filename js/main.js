@@ -5,6 +5,14 @@ $(document).ready(function(){
     $("#" + display).addClass("current")
     $("article").not("#" + display).removeClass("current")
   })
+  $("#tab-3 li a").on('click',function(event){
+    event.preventDefault()
+    var style = $(this).attr("href")
+    $("#" + style).addClass("current")
+    console.log(style)
+    $("#tab-3 article").not("#" + style).removeClass("current")
+  })
+
 })
 
 
