@@ -25,13 +25,12 @@ main {
     list-style-type: none; }
     main ul li {
       float: left;
-      margin: 0 15px; }
+      margin-left: 15px; }
       main ul li a:link {
         color: white;
         text-decoration: none; }
-        main ul li a:link:hover {
-          color: brown;
-          text-shadow: 0px 3px 3px white; }
+      main ul li a:hover {
+        text-shadow: -3px 3px 5px red; }
   main section {
     margin: 30px auto 30px 30px;
     width: 90%;
@@ -88,6 +87,12 @@ main {
     margin-left: 15px;
     text-shadow: 0px 0px 4px #330000, 0px 0px 5px #990000, 0px 0px 9px #FF0000;
     z-index: 2; }
+    #tab-2 ul li a:link,
+    #tab-2 ul li a:visited {
+      color: brown;
+      text-decoration: none; }
+    #tab-2 ul li a:hover {
+      text-shadow: 0px 0px 3px black, 3px 0px 3px white; }
     #tab-2 ul li img {
       margin-left: 15px;
       width: 25px; }
