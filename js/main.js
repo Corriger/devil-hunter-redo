@@ -1,18 +1,23 @@
 $(document).ready(function(){
   $("header a").on('click',function(event){
     event.preventDefault()
-    var display = $(this).attr("href")
-    $("#" + display).addClass("current")
-    $("article").not("#" + display).removeClass("current")
+    var display = "#" + $(this).attr("href")
+    $(display).addClass("current")
+    $("main section article").not(display).removeClass("current")
   })
-  $("#tab-3 li a").on('click',function(event){
+  $("#tab-3 a").on('click',function(event){
     event.preventDefault()
-    var style = $(this).attr("href")
-    $("#" + style).addClass("current")
-    console.log(style)
-    $("#tab-3 article").not("#" + style).removeClass("current")
+    var style = "#" + $(this).attr("href")
+    $(style).addClass("current")
+    $("#tab-3 article").not(style).removeClass("current")
   })
-
+  $("#tab-4 a").on('click',function(event){
+    event.preventDefault()
+    var gun = $(this).attr("href")
+    $("#" + gun).addClass("current")
+    $("#tab-4 article").not("#" + gun).removeClass("current")
+    console.log("#" + gun)
+  })
 })
 
 

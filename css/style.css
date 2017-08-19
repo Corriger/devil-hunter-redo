@@ -1,6 +1,10 @@
 .current {
   display: block; }
 
+.current-gun {
+  display: block;
+  border-right: 3px double red; }
+
 * {
   position: relative;
   letter-spacing: 1.4px;
@@ -37,7 +41,7 @@ main {
   main section {
     margin: 30px auto 30px 30px;
     width: 90%;
-    min-height: 70vh;
+    height: 75vh;
     border: 3px double red;
     overflow-x: hidden;
     overflow-y: auto; }
@@ -109,30 +113,68 @@ main {
 #tab-3 section {
   border: none;
   float: left;
+  height: 100%;
   margin: 0;
-  width: calc(50% - 30px);
-  overflow-y: auto; }
+  width: calc(50% - 30px); }
+  #tab-3 section:last-of-type {
+    float: right;
+    min-height: 500px; }
   #tab-3 section p {
     color: red;
     margin-bottom: 15px;
-    overflow-y: auto;
     text-shadow: 0px 0px 4px #330000, 0px 0px 5px #990000, 0px 0px 9px #FF0000; }
+  #tab-3 section article {
+    height: auto;
+    text-align: right;
+    top: 45px; }
+    #tab-3 section article strong {
+      color: white;
+      display: block;
+      font-size: 2em;
+      font-style: italic;
+      margin: 15px; }
+      #tab-3 section article strong p {
+        font-size: 0.8em;
+        z-index: 2; }
   #tab-3 section ul {
-    float: none;
+    float: right;
     margin: 0 auto; }
     #tab-3 section ul li a {
       z-index: 2; }
       #tab-3 section ul li a img {
         margin: 0 5px;
         width: 25px; }
-  #tab-3 section article {
-    margin: 15px;
-    text-align: right; }
-    #tab-3 section article strong {
+
+#tab-4 section {
+  border: none;
+  width: calc(100% - 30px);
+  height: 500px; }
+  #tab-4 section ul {
+    width: 100%;
+    z-index: 2; }
+    #tab-4 section ul li {
+      float: left;
+      margin: 0 3% 3% 0; }
+      #tab-4 section ul li img {
+        display: inline;
+        text-align: right;
+        height: 20px;
+        margin-bottom: 20px; }
+  #tab-4 section article {
+    min-height: 300px; }
+    #tab-4 section article strong {
       color: white;
-      font-size: 2em;
-      font-style: italic; }
-    #tab-3 section article p {
-      font-size: 0.8em; }
+      display: block;
+      margin: 15px 0; }
+    #tab-4 section article ul {
+      display: block;
+      float: left;
+      list-style-image: url(""); }
+      #tab-4 section article ul li {
+        color: red;
+        float: none;
+        margin: 0; }
+        #tab-4 section article ul li p {
+          margin: 15px 0; }
 
 /*# sourceMappingURL=style.css.map */
