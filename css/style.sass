@@ -11,12 +11,17 @@
   box-sizing: border-box
 html
   font-size: 14px
-  line-height: 1.1em
+  line-height: 1.2em
 body
   background: black
+  font-family: "Orbitron", monospace, sans-serif
+strong,
+em
+  font-family: "Cinzel", "Times New Roman", serif
 main
   margin: 30px auto 30px 30px
   width: 80%
+  overflow-y: visible
   header
     clear: both
     padding: 15px
@@ -37,7 +42,7 @@ main
   section
     margin: 30px auto 30px 30px
     width: 90%
-    height: 75vh
+    min-height: 75vh
     border: 3px double red
     overflow-x: hidden
     overflow-y: auto
@@ -53,3 +58,4 @@ main
 @import 'components/social'
 @import 'components/ability'
 @import 'components/firearms'
+@import 'components/devil-arms'

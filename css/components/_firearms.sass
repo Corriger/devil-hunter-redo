@@ -2,7 +2,7 @@
   section
     border: none
     width: calc(100% - 30px)
-    height: 500px
+    min-height: 600px
     ul
       width: 100%
       z-index: 2
@@ -12,10 +12,12 @@
         img
           display: inline
           text-align: right
-          height: 20px
+          width: 50px
           margin-bottom: 20px
     article
       min-height: 300px
+      top: 60px
+      width: 75%
       strong
         color: white
         display: block
@@ -23,10 +25,12 @@
       ul
         display: block
         float: left
-        list-style-image: url('')
+        list-style-image: url('../img/list-style.png')
         li
           color: red
           float: none
           margin: 0
+          &:last-of-type
+            list-style-image: none
           p
             margin: 15px 0

@@ -13,15 +13,24 @@ $(document).ready(function(){
   })
   $("#tab-4 a").on('click',function(event){
     event.preventDefault()
-    var gun = $(this).attr("href")
-    $("#" + gun).addClass("current")
-    $("#tab-4 article").not("#" + gun).removeClass("current")
-    console.log("#" + gun)
+    var gun = "#" + $(this).attr("href")
+    $(gun).addClass("current")
+    $("#tab-4 article").not(gun).removeClass("current")
+  })
+  $("#tab-5 a").on('click',function(event){
+    event.preventDefault()
+    var dA = "#" + $(this).attr("href")
+    $(dA).addClass("current")
+    $("#tab-5 article").not(dA).removeClass("current")
   })
 })
 
-
-
+/*$("header a, #tab- a").on('click',function(event){
+  event.preventDefault()
+  var display = "#" + $(this).attr("href")
+  $(display).addClass("current")
+  $("main section article").not(display).removeClass("current")
+})*/
 
 
 
