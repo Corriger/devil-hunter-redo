@@ -4,6 +4,7 @@ $(document).ready(function(){
     var display = "#" + $(this).attr("href")
     $(display).addClass("current")
     $("main section article").not(display).removeClass("current")
+    $(display).fadeIn("slow");
   })
   $("#tab-3 a").on('click',function(event){
     event.preventDefault()
