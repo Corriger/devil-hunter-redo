@@ -188,6 +188,7 @@ main {
         margin-bottom: 20px; }
   #tab-4 section article {
     min-height: 300px;
+    padding: 0;
     top: 60px;
     width: 75%; }
     #tab-4 section article strong {
@@ -197,7 +198,8 @@ main {
     #tab-4 section article ul {
       display: block;
       float: left;
-      list-style-image: url("../img/list-style.png"); }
+      list-style-image: url("../img/list-style.png");
+      padding-left: 30px; }
       #tab-4 section article ul li {
         color: red;
         float: none;
@@ -257,7 +259,7 @@ main {
     background-position: right;
     background-size: auto 100%; }
   #tab-5 section #sub3-tab-07 strong {
-    color: crimson;
+    color: maroon;
     text-shadow: 3px 3px 5px orange, 3px 3px 8px darkorange; }
   #tab-5 section #sub3-tab-07:after {
     background-image: url("../img/devil-arms/true-ifrit.png");
@@ -267,32 +269,44 @@ main {
     color: mediumpurple;
     text-shadow: 0px 0px 7px mediumorchid, 0px 0px 5px black, 0px 0px 3px black; }
   #tab-5 section #sub3-tab-08:after {
-    background-image: url("../img/devil-arms/sparda.jpg");
+    background-image: url("../img/devil-arms/true-sparda.png");
     background-position: center;
-    background-size: cover; }
+    background-size: 100% 100%; }
   #tab-5 section #sub3-tab-09 strong {
     color: darkgrey;
     text-shadow: 3px 3px 5px crimson, 3px 3px 8px firebrick; }
   #tab-5 section #sub3-tab-09:after {
     background-image: url("../img/devil-arms/true-gilgamesh.png");
-    background-position: center;
-    background-size: cover; }
+    background-position: right;
+    background-size: auto 100%; }
   #tab-5 section #sub3-tab-10 strong {
-    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
+    color: dimgrey;
+    text-shadow: 0px 0px 5px black, 3px 3px 5px gold, 3px 3px 8px palegoldenrod; }
   #tab-5 section #sub3-tab-10:after {
-    background-image: url("../img/devil-arms/bell.png"); }
+    background-image: url("../img/devil-arms/true-pandora.png");
+    background-position: right;
+    background-size: auto 100%; }
   #tab-5 section #sub3-tab-11 strong {
-    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
+    color: crimson;
+    text-shadow: 3px 3px 5px mediumvioletred, 3px 3px 8px lightcoral; }
   #tab-5 section #sub3-tab-11:after {
-    background-image: url("../img/devil-arms/bell.png"); }
+    background-image: url("../img/devil-arms/true-lucifer.png");
+    background-position: right;
+    background-size: auto 100%; }
   #tab-5 section #sub3-tab-12 strong {
-    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
+    color: navy;
+    text-shadow: 3px 3px 5px aqua, 3px 3px 8px blue; }
   #tab-5 section #sub3-tab-12:after {
-    background-image: url("../img/devil-arms/bell.png"); }
+    background-image: url("../img/devil-arms/bell.png");
+    background-position: right;
+    background-size: auto 100%; }
   #tab-5 section #sub3-tab-13 strong {
-    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
+    color: darkgrey;
+    text-shadow: none; }
   #tab-5 section #sub3-tab-13:after {
-    background-image: url("../img/devil-arms/bell.png"); }
+    background-image: url("../img/devil-arms/bell.png");
+    background-position: right;
+    background-size: auto 100%; }
   #tab-5 section article {
     color: red;
     min-height: 300px;
