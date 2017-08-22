@@ -17,6 +17,7 @@ html {
   line-height: 1.2em; }
 
 body {
+  background-color: black;
   background-image: url("../img/dante-timeline.png");
   background-position: top right;
   background-repeat: no-repeat;
@@ -206,165 +207,74 @@ main {
     text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-01:after {
     background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.4;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-position: center;
+    background-size: cover; }
+  #tab-5 section #sub3-tab-02 strong {
+    color: lightgrey;
+    text-shadow: 3px 3px 5px lightblue, 3px 3px 8px cyan; }
   #tab-5 section #sub3-tab-02:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/true-cerberus.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-5 section #sub3-tab-03 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-03:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-04 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-04:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-05 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-05:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-06 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-06:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-07 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-07:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-08 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-08:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-09 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-09:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-10 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-10:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-11 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-11:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-12 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-12:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
+  #tab-5 section #sub3-tab-13 strong {
+    text-shadow: 3px 3px 5px brown, 3px 3px 8px darkred; }
   #tab-5 section #sub3-tab-13:after {
-    background-image: url("../img/devil-arms/bell.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: -1; }
+    background-image: url("../img/devil-arms/bell.jpg"); }
   #tab-5 section article {
     color: red;
     min-height: 300px;
     top: 11%;
     width: 70%; }
+    #tab-5 section article::after {
+      background-repeat: no-repeat;
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 0.4;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: -1; }
     #tab-5 section article strong,
     #tab-5 section article em,
     #tab-5 section article p {
