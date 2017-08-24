@@ -14,10 +14,11 @@
 
 ::-webkit-scrollbar-thumb {
   background: red;
-  border: 3px solid black; }
+  border: 3px solid transparent; }
 
 ::-webkit-scrollbar-track {
-  background: transparent; }
+  background: transparent;
+  padding: 3px; }
 
 html {
   font-size: 14px;
@@ -25,7 +26,7 @@ html {
 
 body {
   background-color: black;
-  background-image: url("../img/dante-timeline.png");
+  background-image: url("../img/dmc-bg.jpg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,14 +52,18 @@ main {
       margin-left: 30px; }
       main ul li a:link {
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        -webkit-transition: all 0.3s ease; }
       main ul li a:hover {
-        text-shadow: -3px 5px 5px red, 0px 0px 5px white; }
+        color: maroon;
+        text-shadow: -3px 5px 5px red, 0px 0px 5px black;
+        -webkit-transition: all 0.3s ease; }
       main ul li:last-of-type a:hover {
         color: black;
         text-shadow: 0px 0px 7px red, 3px 3px 7px red, -3px -3px 7px red; }
   main section {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
     margin: 30px auto 30px 30px;
     min-height: 75vh;
     overflow-x: hidden;
@@ -87,6 +92,10 @@ main {
   opacity: 0.4;
   text-shadow: 0px 0px 1px white, 0px 0px 1px white, 10px 0px 7px crimson, 5px 0px 2px red; }
 #tab-1 ul {
+  background: url("../img/shoot-the-works.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   padding: 15px; }
   #tab-1 ul li {
     float: none;
@@ -135,7 +144,7 @@ main {
     color: blue; }
 
 #tab-3 section {
-  border: none;
+  background: none;
   float: left;
   max-height: 100% !important;
   margin: 0;
@@ -172,6 +181,7 @@ main {
         width: 25px; }
 
 #tab-4 section {
+  background: transparent;
   border: none;
   width: calc(100% - 30px);
   min-height: 600px; }
@@ -210,9 +220,10 @@ main {
           margin: 15px 0; }
 
 #tab-5 section {
-  border: none;
+  background: transparent;
   min-height: 600px; }
   #tab-5 section ul {
+    float: left;
     z-index: 3; }
     #tab-5 section ul li a img {
       height: 50px;
@@ -297,16 +308,16 @@ main {
     color: navy;
     text-shadow: 3px 3px 5px aqua, 3px 3px 8px blue; }
   #tab-5 section #sub3-tab-12:after {
-    background-image: url("../img/devil-arms/bell.png");
-    background-position: right;
-    background-size: auto 100%; }
+    background-image: url("../img/devil-arms/merciless.jpg");
+    background-position: center;
+    background-size: cover; }
   #tab-5 section #sub3-tab-13 strong {
     color: darkgrey;
     text-shadow: none; }
   #tab-5 section #sub3-tab-13:after {
-    background-image: url("../img/devil-arms/bell.png");
-    background-position: right;
-    background-size: auto 100%; }
+    background-image: url("../img/devil-arms/merciless.jpg");
+    background-position: center;
+    background-size: cover; }
   #tab-5 section article {
     color: red;
     min-height: 300px;
@@ -317,7 +328,7 @@ main {
       content: "";
       height: 100%;
       left: 0;
-      opacity: 0.4;
+      opacity: 0.6;
       position: absolute;
       width: 100%;
       top: 0;
