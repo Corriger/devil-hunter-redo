@@ -1,0 +1,74 @@
+.current
+  display: block
+*
+  position: relative
+  letter-spacing: 1.4px
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+::-webkit-scrollbar
+  width: 15px
+  height: 7px
+::-webkit-scrollbar-thumb
+  background: red
+  border: 3px solid transparent
+::-webkit-scrollbar-track
+  background: transparent
+  padding: 3px
+html
+  font-size: 14px
+  line-height: 1.2em
+body
+  background-color: black
+  background-image: url("../img/dmc-bg-dt.jpg")
+  background-position: top right
+  background-repeat: no-repeat
+  background-size: cover
+  font-family: "didact gothic", monospace, sans-serif
+strong,
+em
+  font-family: "italiana", "Times New Roman", serif
+main
+  margin: 30px auto 30px 30px
+  width: 80%
+  overflow-y: visible
+  header
+    clear: both
+    padding: 15px
+  ul
+    float: right
+    font-size: 1.3em
+    list-style-type: none
+    li
+      float: left
+      margin-left: 30px
+      a:link
+        color: white
+        text-decoration: none
+        -webkit-transition: all .3s ease
+      a:hover
+        color: cyan
+        text-shadow: 0px 0px 7px cornflowerblue, -3px 3px 7px aqua, -3px 5px 7px aquamarine
+        -webkit-transition: all .3s ease
+      &:last-of-type
+        a:hover
+          color: black
+          text-shadow: 0px 0px 5px red, 0px 0px 5px black
+  section
+    border-radius: 15px 0px 15px 15px
+    margin: 30px auto 30px 30px
+    min-height: 75vh
+    overflow-x: hidden
+    overflow-y: auto
+    width: 90%
+    article
+      display: none
+      padding: 30px
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+
+@import 'components/ability'
+@import 'components/chimera'
+@import 'components/majin'
