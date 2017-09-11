@@ -13,7 +13,7 @@
   height: 7px; }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: cyan;
   border: 3px solid transparent; }
 
 ::-webkit-scrollbar-track {
@@ -30,11 +30,11 @@ body {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "didact gothic", monospace, sans-serif; }
+  font-family: "Didact Gothic", monospace, sans-serif; }
 
 strong,
 em {
-  font-family: "italiana", "Times New Roman", serif; }
+  font-family: "Italiana", "Times New Roman", serif; }
 
 main {
   margin: 30px auto 30px 30px;
@@ -58,9 +58,12 @@ main {
         color: cyan;
         text-shadow: 0px 0px 7px cornflowerblue, -3px 3px 7px aqua, -3px 5px 7px aquamarine;
         -webkit-transition: all 0.3s ease; }
+      main ul li:last-of-type a:link,
+      main ul li:last-of-type a:visited {
+        color: crimson; }
       main ul li:last-of-type a:hover {
-        color: black;
-        text-shadow: 0px 0px 5px red, 0px 0px 5px black; }
+        color: maroon;
+        text-shadow: 0px 0px 5px crimson, 0px 0px 5px black; }
   main section {
     border-radius: 15px 0px 15px 15px;
     margin: 30px auto 30px 30px;
@@ -88,9 +91,9 @@ main {
     float: right;
     min-height: 500px; }
   #tab-3 section p {
-    color: red;
+    color: cyan;
     margin-bottom: 15px;
-    text-shadow: 0px 0px 4px #330000, 0px 0px 5px #990000, 0px 0px 9px #FF0000; }
+    text-shadow: 0px 0px 4px cornflowerblue, 0px 0px 5px aqua, 0px 0px 9px aquamarine; }
   #tab-3 section article {
     height: auto;
     padding: 0;
@@ -131,25 +134,78 @@ main {
         text-align: right;
         width: 50px;
         margin-bottom: 20px; }
+  #tab-4 section #sub2-tab-01:after {
+    background-image: url("../img/firearms/mutate-e-i.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-02:after {
+    background-image: url("../img/firearms/mutate-artemis.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-03:after {
+    background-image: url("../img/firearms/mutate-spiral.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-04:after {
+    background-image: url("../img/firearms/mutate-grenade.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-05:after {
+    background-image: url("../img/firearms/mutate-needle.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-06:after {
+    background-image: url("../img/firearms/mutate-nightmare.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-07:after {
+    background-image: url("../img/firearms/mutate-coyote.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-08:after {
+    background-image: url("../img/firearms/mutate-dead.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-09:after {
+    background-image: url("../img/firearms/mutate-redeemer.png");
+    background-position: right;
+    background-size: auto 100%; }
+  #tab-4 section #sub2-tab-10:after {
+    background-image: url("../img/firearms/mutate-missile.png");
+    background-position: right;
+    background-size: auto 100%; }
   #tab-4 section article {
     min-height: 300px;
     padding: 0;
-    top: 60px;
+    top: 11%;
     width: 75%; }
+    #tab-4 section article::after {
+      background-repeat: no-repeat;
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: -1; }
     #tab-4 section article strong {
       color: white;
+      font-size: 1.5em;
       display: block;
       margin: 15px 0; }
     #tab-4 section article ul {
       display: block;
       float: left;
-      list-style-image: url("../img/list-style.png");
+      list-style-image: url("../img/dt-style.png");
       padding-left: 30px; }
       #tab-4 section article ul li {
-        color: red;
+        color: cyan;
+        font-style: oblique;
         float: none;
         margin: 0; }
         #tab-4 section article ul li:last-of-type {
+          font-style: normal;
           list-style-image: none; }
         #tab-4 section article ul li p {
           margin: 15px 0; }

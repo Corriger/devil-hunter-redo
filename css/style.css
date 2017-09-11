@@ -318,6 +318,13 @@ main {
     background-image: url("../img/devil-arms/merciless.jpg");
     background-position: center;
     background-size: cover; }
+  #tab-5 section #sub3-tab-14 strong {
+    color: black;
+    text-shadow: 0px 0px 2px white, 3px 3px 5px gold, 3px 3px 8px navy; }
+  #tab-5 section #sub3-tab-14:after {
+    background-image: url("../img/devil-arms/vergil.png");
+    background-position: right;
+    background-size: auto 100%; }
   #tab-5 section article {
     color: red;
     min-height: 300px;
@@ -328,7 +335,7 @@ main {
       content: "";
       height: 100%;
       left: 0;
-      opacity: 0.6;
+      opacity: 1;
       position: absolute;
       width: 100%;
       top: 0;
