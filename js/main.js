@@ -2,11 +2,9 @@ $(document).ready(function() {
     $("header a").on('click', function(event) {
         var display = "#" + $(this).attr("href")
         var seeShit = "rgba(5,1,0,.7)"
-        if(display != "#index-dt.html" && display != "#index.html"){
           event.preventDefault();
           $(display).addClass("current").css("background", seeShit)
-          $("main section article").not(display).removeClass("current")
-        }
+          $("main article").not(display).removeClass("current")
     })
     $("#tab-3 a").on('click', function(event) {
         event.preventDefault()

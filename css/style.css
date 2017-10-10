@@ -25,8 +25,10 @@ html {
   line-height: 1.2em; }
 
 body {
+  height: 100vh;
+  width: 100vw;
   background-color: black;
-  background-image: url("../img/dmc-bg.jpg");
+  background-image: url("../img/dantewp3.png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,9 +39,8 @@ em {
   font-family: "Cinzel", "Times New Roman", serif; }
 
 main {
-  margin: 30px auto 30px 30px;
   width: 80%;
-  overflow-y: visible; }
+  overflow: hidden; }
   main header {
     clear: both;
     padding: 15px; }
@@ -64,9 +65,7 @@ main {
   main section {
     border-radius: 15px 0px 15px 15px;
     margin: 30px auto 30px 30px;
-    min-height: 75vh;
-    overflow-x: hidden;
-    overflow-y: auto;
+    height: 75vh;
     width: 90%; }
     main section article {
       display: none;
@@ -76,45 +75,75 @@ main {
       left: 0;
       width: 100%; }
 
-#tab-1 h4 {
-  color: white;
-  display: block;
-  font-family: "Cinzel", "Times New Roman", serif;
-  font-size: 2em;
-  letter-spacing: 3px;
-  margin: 15px;
-  text-align: center;
-  text-shadow: 10px 0px 7px grey, -10px 0px 7px darkgrey, 0px 0px 3px black; }
-#tab-1 strong {
-  color: skyblue;
-  font-style: italic;
-  letter-spacing: normal;
-  top: 5px;
-  opacity: 0.6;
-  text-shadow: 0px 0px 1px skyblue, 0px 0px 2px black, 10px 0px 7px crimson, 5px 0px 2px red; }
-#tab-1 ul {
-  background: url("../img/shoot-the-works.png");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  padding: 15px; }
-  #tab-1 ul li {
-    float: none;
-    margin: 15px 0; }
-    #tab-1 ul li em {
-      font-family: "Orbitron", monospace, serif;
-      color: red;
-      left: -15px;
-      text-shadow: 0px 0px 2px #330000, 0px 0px 5px #990000, 0px 0px 6px #FF0000;
-      z-index: 2; }
-      #tab-1 ul li em span {
-        font-weight: bolder; }
-#tab-1 p {
-  color: white;
-  font-style: italic;
-  margin-bottom: 15px;
-  padding: 0 15px;
-  text-shadow: 0px 0px 2px #330000, 0px 0px 3px #990000, 0px 0px 6px #FF0000; }
+.guidepost {
+  margin-right: 60px; }
+  .guidepost p {
+    font-size: 3.6em;
+    margin-right: 120px;
+    float: right;
+    clear: both;
+    color: white;
+    text-shadow: 0px 0px 5px black, 0px 0px 7px red; }
+    .guidepost p + p {
+      line-height: 1em;
+      margin-right: 0;
+      font-style: italic;
+      opacity: 0.6;
+      color: transparent;
+      text-shadow: 0px 0px 5px brown, 0px 0px 7px cyan;
+      z-index: -1; }
+
+.jukebox ul {
+  float: left;
+  margin: 0 60px; }
+  .jukebox ul li {
+    float: left;
+    margin-right: 15px; }
+    .jukebox ul li img {
+      width: 50px; }
+
+#tab-1 {
+  height: 100%;
+  overflow-y: auto; }
+  #tab-1 h4 {
+    color: white;
+    display: block;
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin: 15px;
+    text-align: center;
+    text-shadow: 10px 0px 7px grey, -10px 0px 7px darkgrey, 0px 0px 3px black; }
+  #tab-1 strong {
+    color: skyblue;
+    font-style: italic;
+    letter-spacing: normal;
+    top: 5px;
+    opacity: 0.6;
+    text-shadow: 0px 0px 1px skyblue, 0px 0px 2px black, 10px 0px 7px crimson, 5px 0px 2px red; }
+  #tab-1 ul {
+    background: url("../img/shoot-the-works.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 15px; }
+    #tab-1 ul li {
+      float: none;
+      margin: 15px 0; }
+      #tab-1 ul li em {
+        font-family: "Orbitron", monospace, serif;
+        color: red;
+        left: -15px;
+        text-shadow: 0px 0px 2px #330000, 0px 0px 5px #990000, 0px 0px 6px #FF0000;
+        z-index: 2; }
+        #tab-1 ul li em span {
+          font-weight: bolder; }
+  #tab-1 p {
+    color: white;
+    font-style: italic;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    text-shadow: 0px 0px 2px #330000, 0px 0px 3px #990000, 0px 0px 6px #FF0000; }
 
 #tab-2 ul {
   color: red;
@@ -142,40 +171,40 @@ main {
   #tab-2 ul #dog {
     color: blue; }
 
-#tab-3 section {
+#tab-3 > section {
   background: none;
   float: left;
-  max-height: 100% !important;
   margin: 0;
-  width: calc(50% - 30px);
-  overflow-y: auto; }
-  #tab-3 section:last-of-type {
+  width: calc(50% - 30px); }
+  #tab-3 > section:first-of-type {
+    overflow-y: auto;
+    padding: 15px; }
+  #tab-3 > section:last-of-type {
+    overflow: hidden;
     float: right;
     min-height: 500px; }
-  #tab-3 section p {
+  #tab-3 > section p {
     color: red;
-    margin-bottom: 15px;
-    text-shadow: 0px 0px 4px #330000, 0px 0px 5px #990000, 0px 0px 9px #FF0000; }
-  #tab-3 section article {
+    margin-bottom: 15px; }
+  #tab-3 > section article {
     height: auto;
     padding: 0;
     text-align: right;
     top: 45px; }
-    #tab-3 section article strong {
+    #tab-3 > section article strong {
       color: white;
       display: block;
       font-size: 2em;
       font-style: italic;
       margin: 15px; }
-      #tab-3 section article strong p {
+      #tab-3 > section article strong p {
         font-size: 0.8em;
         z-index: 2; }
-  #tab-3 section ul {
-    float: right;
-    margin: 0 auto; }
-    #tab-3 section ul li a {
+  #tab-3 > section ul {
+    float: right; }
+    #tab-3 > section ul li a {
       z-index: 2; }
-      #tab-3 section ul li a img {
+      #tab-3 > section ul li a img {
         margin: 0 5px;
         width: 25px; }
 
@@ -188,22 +217,54 @@ main {
     width: 100%;
     z-index: 2; }
     #tab-4 section ul li {
-      float: left;
-      margin: 0 3% 3% 0; }
+      float: left; }
       #tab-4 section ul li img {
         display: inline;
         text-align: right;
-        width: 50px;
+        height: 30px;
         margin-bottom: 20px; }
+  #tab-4 section #sub2-tab-01:after {
+    background-image: url("../img/firearms/mutate-e-i.png"); }
+  #tab-4 section #sub2-tab-02:after {
+    background-image: url("../img/firearms/mutate-artemis.png"); }
+  #tab-4 section #sub2-tab-03:after {
+    background-image: url("../img/firearms/mutate-spiral.png"); }
+  #tab-4 section #sub2-tab-04:after {
+    background-image: url("../img/firearms/mutate-grenade.png"); }
+  #tab-4 section #sub2-tab-05:after {
+    background-image: url("../img/firearms/mutate-needle.png"); }
+  #tab-4 section #sub2-tab-06:after {
+    background-image: url("../img/firearms/mutate-nightmare.png"); }
+  #tab-4 section #sub2-tab-07:after {
+    background-image: url("../img/firearms/mutate-coyote.png"); }
+  #tab-4 section #sub2-tab-08:after {
+    background-image: url("../img/firearms/mutate-redeemer.png"); }
+  #tab-4 section #sub2-tab-09:after {
+    background-image: url("../img/firearms/mutate-dead.png"); }
+  #tab-4 section #sub2-tab-10:after {
+    background-image: url("../img/firearms/mutate-missile.png"); }
   #tab-4 section article {
     min-height: 300px;
     padding: 0;
     top: 60px;
     width: 75%; }
+    #tab-4 section article:after {
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: auto 100%;
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: -1; }
     #tab-4 section article strong {
       color: white;
+      font-size: 2rem;
       display: block;
-      margin: 15px 0; }
+      margin: 15px; }
     #tab-4 section article ul {
       display: block;
       float: left;
@@ -220,13 +281,19 @@ main {
 
 #tab-5 section {
   background: transparent;
+  border: none;
+  width: calc(100% - 30px);
   min-height: 600px; }
   #tab-5 section ul {
-    float: left;
-    z-index: 3; }
-    #tab-5 section ul li a img {
-      height: 50px;
-      margin-bottom: 20px; }
+    width: 100%;
+    z-index: 2; }
+    #tab-5 section ul li {
+      float: left; }
+      #tab-5 section ul li img {
+        display: inline;
+        text-align: right;
+        height: 50px;
+        margin-bottom: 20px; }
   #tab-5 section #sub3-tab-01 strong {
     color: maroon;
     text-shadow: 3px 3px 5px black, 3px 3px 8px darkred; }

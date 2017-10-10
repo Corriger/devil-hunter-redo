@@ -19,8 +19,10 @@ html
   font-size: 14px
   line-height: 1.2em
 body
+  height: 100vh
+  width: 100vw
   background-color: black
-  background-image: url("../img/dmc-bg.jpg")
+  background-image: url("../img/dantewp3.png")
   background-position: top right
   background-repeat: no-repeat
   background-size: cover
@@ -29,9 +31,8 @@ strong,
 em
   font-family: "Cinzel", "Times New Roman", serif
 main
-  margin: 30px auto 30px 30px
   width: 80%
-  overflow-y: visible
+  overflow: hidden
   header
     clear: both
     padding: 15px
@@ -57,9 +58,7 @@ main
   section
     border-radius: 15px 0px 15px 15px
     margin: 30px auto 30px 30px
-    min-height: 75vh
-    overflow-x: hidden
-    overflow-y: auto
+    height: 75vh
     width: 90%
     article
       display: none
@@ -68,6 +67,32 @@ main
       top: 0
       left: 0
       width: 100%
+.guidepost
+  margin-right: 60px
+  p
+    font-size: 3.6em
+    margin-right: 120px
+    float: right
+    clear: both
+    color: white
+    text-shadow: 0px 0px 5px black, 0px 0px 7px red
+    &+p
+      line-height: 1em
+      margin-right: 0
+      font-style: italic
+      opacity: .6
+      color: transparent
+      text-shadow: 0px 0px 5px brown, 0px 0px 7px cyan
+      z-index: -1
+.jukebox
+  ul
+    float: left
+    margin: 0 60px
+    li
+      float: left
+      margin-right: 15px
+      img
+        width: 50px
 
 @import 'components/stats'
 @import 'components/social'
