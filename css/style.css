@@ -22,7 +22,7 @@
 
 html {
   font-size: 14px;
-  line-height: 1.2em; }
+  line-height: 1.3em; }
 
 body {
   height: 100vh;
@@ -58,7 +58,7 @@ main {
       main ul li a:hover {
         color: maroon;
         text-shadow: -3px 5px 5px red, 0px 0px 5px black;
-        -webkit-transition: all 0.3s ease; }
+        transition: all 0.3s ease; }
       main ul li:last-of-type a:hover {
         color: lightblue;
         text-shadow: 0px 0px 7px cornflowerblue, 3px 3px 7px aqua, -3px -3px 7px aquamarine; }
@@ -92,6 +92,11 @@ main {
       color: transparent;
       text-shadow: 0px 0px 5px brown, 0px 0px 7px cyan;
       z-index: -1; }
+
+#group > img {
+  bottom: 0px;
+  left: 0px;
+  height: 75px; }
 
 .jukebox ul {
   float: left;
@@ -238,9 +243,9 @@ main {
   #tab-4 section #sub2-tab-07:after {
     background-image: url("../img/firearms/mutate-coyote.png"); }
   #tab-4 section #sub2-tab-08:after {
-    background-image: url("../img/firearms/mutate-redeemer.png"); }
-  #tab-4 section #sub2-tab-09:after {
     background-image: url("../img/firearms/mutate-dead.png"); }
+  #tab-4 section #sub2-tab-09:after {
+    background-image: url("../img/firearms/mutate-redeemer.png"); }
   #tab-4 section #sub2-tab-10:after {
     background-image: url("../img/firearms/mutate-missile.png"); }
   #tab-4 section article {
@@ -348,8 +353,8 @@ main {
     text-shadow: 0px 0px 7px mediumorchid, 0px 0px 5px black, 0px 0px 3px black; }
   #tab-5 section #sub3-tab-08:after {
     background-image: url("../img/devil-arms/true-sparda.png");
-    background-position: center;
-    background-size: 100% 100%; }
+    background-position: top center;
+    background-size: cover; }
   #tab-5 section #sub3-tab-09 strong {
     color: darkgrey;
     text-shadow: 3px 3px 5px crimson, 3px 3px 8px firebrick; }
@@ -375,9 +380,9 @@ main {
     color: navy;
     text-shadow: 3px 3px 5px aqua, 3px 3px 8px blue; }
   #tab-5 section #sub3-tab-12:after {
-    background-image: url("../img/devil-arms/merciless.jpg");
-    background-position: center;
-    background-size: cover; }
+    background-image: url("../img/devil-arms/true-vendetta.png");
+    background-position: right;
+    background-size: auto 100%; }
   #tab-5 section #sub3-tab-13 strong {
     color: darkgrey;
     text-shadow: none; }
@@ -386,8 +391,8 @@ main {
     background-position: center;
     background-size: cover; }
   #tab-5 section #sub3-tab-14 strong {
-    color: black;
-    text-shadow: 0px 0px 2px white, 3px 3px 5px gold, 3px 3px 8px navy; }
+    color: white;
+    text-shadow: 0px 0px 2px mediumblue, 3px 3px 5px slateblue, 3px 3px 8px navy; }
   #tab-5 section #sub3-tab-14:after {
     background-image: url("../img/devil-arms/vergil.png");
     background-position: right;
@@ -420,5 +425,31 @@ main {
       color: white;
       font-size: 1.5rem;
       margin: 0 0 1rem 1rem; }
+
+#tab-6 {
+  padding: 15px; }
+  #tab-6::after {
+    background-image: url("../img/dmc-dt-1.png");
+    background-position: center;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1; }
+  #tab-6 p {
+    color: cyan;
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 3px crimson, 0px 0px 5px red; }
+    #tab-6 p:first-of-type {
+      text-align: center;
+      margin: 0 auto 10px auto; }
 
 /*# sourceMappingURL=style.css.map */
