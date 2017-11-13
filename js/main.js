@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("header a").on('click', function(event) {
+    $("header .clearfix a").on('click', function(event) {
         var display = "#" + $(this).attr("href")
         var seeShit = "rgba(5,1,0,.7)"
           event.preventDefault();
